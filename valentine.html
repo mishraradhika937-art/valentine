@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>For My Favorite Person 💌</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #ffd6e8, #ffeef5);
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            padding: 40px;
+        }
+
+        h1 {
+            color: #ff4d88;
+            font-size: 36px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #444;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 15px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background-color: #ff4d88;
+            color: white;
+        }
+
+        .yes:hover {
+            background-color: #ff1a66;
+        }
+
+        .no {
+            background-color: #ccc;
+        }
+
+        #hiddenMessage {
+            display: none;
+            margin-top: 25px;
+            font-size: 20px;
+            color: #ff1a66;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hi You 💖</h1>
+
+    <p>
+        If you're reading this, it means you clicked something made specially by me.  
+        I just wanted to remind you that you are my favorite notification,  
+        my calm in chaos, and the reason I randomly smile at my phone.  
+    </p>
+
+    <p>
+        So I have one very important question...
+    </p>
+
+    <h2>Will you be my Valentine? 💘</h2>
+
+    <button class="yes" onclick="showLove()">Yes, obviously 💗</button>
+    <button class="no" onclick="alert('Hmm… think again 😌')">No</button>
+
+    <div id="hiddenMessage">
+        I knew it 😭💞  
+        Thank you for being you.  
+        I promise more cute websites, random calls,  
+        and forever choosing you. 💕  
+        Happy Valentine’s Day.
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("hiddenMessage").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
